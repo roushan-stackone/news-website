@@ -1,0 +1,129 @@
+@import "../../../styles-user-variables.scss";
+
+.preview-container {
+    height: 30vh;
+    width: 100%;
+    margin: 0;
+    background: $preview-background;
+
+    align-items: center;
+
+    .preview-content {
+
+        padding: 0 1.5rem;
+
+        .preview-heading {
+            font-weight: 500;
+        }
+    }
+
+}
+
+.contry-container {
+
+    gap: 1rem 3rem;
+    font-size: 3rem;
+    font-weight: bolder;
+
+
+    div {
+
+        display: flex;
+        border-radius: $global-radius;
+        overflow: hidden;
+
+        align-items: center;
+
+        border: 1px solid $secondary-color;
+
+        background-color: black;
+
+        transition: all 0.5s ease !important;
+
+        h1 {
+            margin: 0;
+            padding: 0.5rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.gradient-text-india {
+
+    &:hover {
+        background-image: linear-gradient(45deg, #a46143, #5a8a2e);
+        background-size: 100%;
+    }
+
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // -moz-text-fill-color: transparent;
+}
+
+.gradient-text-australia {
+
+    // background-color: $primary-color;
+
+    &:hover {
+        background-image: linear-gradient(45deg, #2124db, #6e2626);
+        background-size: 100%;
+    }
+}
+
+.gradient-text-america {
+
+    // background-color: $primary-color;
+
+    &:hover {
+        background-image: linear-gradient(45deg, #6e2626, #2124db);
+        background-size: 100%;
+    }
+}
+
+.gradient-text-turkey {
+
+    // background-color: $primary-color;
+
+    &:hover {
+        background-image: linear-gradient(45deg, #6e2626, #ffffff);
+        background-size: 100%;
+    }
+}
+
+.article-card-container {
+
+    gap: 1rem;
+
+    .article-card-content {
+        height: 18vh;
+        justify-content: end;
+
+        background-size: cover;
+
+        color: white;
+
+        cursor: pointer;
+
+        transition: all ease 0.5s;
+
+        &:hover {
+
+            transform: scale(1.03);
+
+            box-shadow: rgba(212, 212, 212, 0.25) 0px 25px 50px -12px;
+
+            filter: brightness(70%);
+
+        }
+    }
+}
+
+.about-container {
+
+    gap: 2rem;
+
+}

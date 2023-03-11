@@ -1,0 +1,43 @@
+<div class="page-container">
+
+    <!-- country heading section -->
+    <section class="w-100 d-flex flex-column mt-5">
+
+        <div class="heading">
+            <h1>News in {{this.country}}</h1>
+        </div>
+
+    </section>
+
+    <!-- news articles section -->
+    <section class="w-100 d-flex flex-column mt-4 mb-5" style="gap: 7rem 0">
+
+        <ng-container *ngFor="let article of newsArticles">
+
+            <div class="article-container">
+
+                <div class="article-banner mb-4"
+                    [ngStyle]="{'background-image': 'url(../../../assets/article-images/' + article.image + '.png)'}">
+
+                    <div class="banner-heading">
+
+                        <h1>{{article.title}}</h1>
+
+                    </div>
+
+                </div>
+
+                <div class="article-content">
+                    <p>
+                        {{article.content}}
+                    </p>
+
+                </div>
+
+            </div>
+
+        </ng-container>
+
+    </section>
+
+</div>

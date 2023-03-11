@@ -1,0 +1,26 @@
+@import '../../../styles-user-variables.scss';
+
+
+.article-container {
+
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed $primary-color;
+
+    .article-banner {
+        height: 70vh;
+        width: 100%;
+
+        background-size: cover;
+        // background-repeat: repeat-x;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .banner-heading {
+            color: white;
+        }
+    }
+
+
+}

@@ -1,0 +1,193 @@
+<div class="page-container">
+
+    <!-- preview section -->
+    <section class="w-100">
+
+        <div class="d-flex row preview-container">
+
+            <div class="d-flex flex-column col-md-5 preview-content">
+
+                <h1 class="preview-heading">
+                    Turkey earthquake: Survivors living in fear on streets
+                </h1>
+
+                <div>
+                    <button (click)="router.navigateByUrl('/country/Turkey')" class="btn btn-primary">
+                        View Article
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- news section -->
+    <section class="w-100 mt-5">
+
+        <div class="heading">
+
+            <h2>Trending Articles</h2>
+
+        </div>
+
+        <div class="d-flex row article-card-container mt-3">
+
+            <ng-container *ngFor="let article of articles">
+
+                <div (click)="router.navigateByUrl('country/' + article.country)"
+                    class="d-flex flex-column col-sm-6 col-md-5 col-lg-4 col-xl-2 article-card-content"
+                    [ngStyle]="{'background-image': 'url(../../../assets/article-images/' + article.image + '.png)'}">
+
+                    <h4>{{ article.title }}</h4>
+
+                </div>
+
+            </ng-container>
+
+        </div>
+
+    </section>
+
+
+    <!-- browse by country -->
+    <section class="w-100 mt-5 mb-5">
+
+        <div class="heading">
+
+            <h2>Browse News by country</h2>
+
+        </div>
+
+        <div class="d-flex contry-container row mt-3">
+
+            <div (click)="router.navigateByUrl('/country/Australia')"
+                class="col-sm-6 col-md-5 col-lg-4 col-xl-2 gradient-text-australia">
+                <h1>
+                    Australia
+                </h1>
+            </div>
+            <div (click)="router.navigateByUrl('/country/America')"
+                class="col-sm-6 col-md-5 col-lg-4 col-xl-2 gradient-text-america">
+                <h1>
+                    America
+                </h1>
+            </div>
+            <div (click)="router.navigateByUrl('/country/India')"
+                class="col-sm-6 col-md-5 col-lg-4 col-xl-2 gradient-text-india">
+                <h1>
+                    India
+                </h1>
+            </div>
+            <div (click)="router.navigateByUrl('/country/Turkey')"
+                class="col-sm-6 col-md-5 col-lg-4 col-xl-2 gradient-text-turkey">
+                <h1>
+                    Turkey
+                </h1>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- about section -->
+    <section class="w-100 mt-5 mb-5">
+
+        <div class="heading">
+
+            <h2>About us</h2>
+
+        </div>
+
+        <div class="d-flex flex-column about-container mt-3">
+
+            <div class="about-content">
+                <p>
+                    The Newsforyou.com website provides consumers with accessible news about the countries they are
+                    interested in,
+                    and the latest events in those countries in one place. There is a wide variety of news for customers
+                    to
+                    choose
+                    from. A digital news library is an online resource that organises and connects all the world's news
+                    by
+                    utilising
+                    the power of the Internet. There is a primary objective of newsforyou.com, which is to help provide
+                    a
+                    platform
+                    on the Internet where authentic news can be found, and to make it the easiest place to find a
+                    library of
+                    news
+                    around the world. Founded by Lara Alghamdi and Mubasheer, the site is managed by Lara Alghamdi and
+                    Mubasheer.
+                </p>
+
+            </div>
+
+            <div class="about-content">
+                <p>
+                    The website features an easy to use navigation system and a user-friendly design, making it a
+                    pleasure
+                    to use.
+                    Our services are categorised and listed on the side menu of the site in order to make things easier
+                    for
+                    you to
+                    find them. In addition to highlighting the most recent trending news for our customers on our
+                    website,
+                    we will
+                    continue to integrate new features as our business grows in the future as well. At the moment, you
+                    can
+                    enjoy the
+                    latest news from Australia, Turkey, India, and the United States; we look forward to adding more
+                    countries and
+                    features in the future.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- preview section -->
+<!-- <section class="w-100">
+
+        <div class="d-flex row preview-container">
+
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div *ngFor="let article of articles" class="carousel-item active">
+                        <img [src]="'../../../assets/article-images/' + article.image + '.png'" class="d-block w-100"
+                            alt="...">
+
+                        <h1 class="preview-heading">
+                            {{article.title}}
+                        </h1>
+
+                        <div>
+                            <button class="btn btn-primary">
+                                View Article
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+    </section> -->
