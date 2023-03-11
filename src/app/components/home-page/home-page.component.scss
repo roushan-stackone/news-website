@@ -127,3 +127,11 @@
     gap: 2rem;
 
 }
+
+@media (max-width: 800px) {
+
+    .article-card-content {
+        height: 28vh !important;
+    }
+
+}
