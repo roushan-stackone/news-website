@@ -3,6 +3,11 @@
 .navbar {
     background-color: $primary-color !important;
 
+
+    // mask-image: linear-gradient($primary-color 95%, transparent 100%);
+    // -webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+
+
     padding: 1.5rem 0;
     font-size: 1rem;
 
@@ -27,8 +32,22 @@
     }
 }
 
+.active {
+    font-weight: 500;
+    color: $secondary-color !important;
+}
+
+.dropdown-item:active {
+    text-decoration: none;
+    background-color: $secondary-color;
+}
+
 
 
 .navbar>.container-fluid {
-    padding: 0 $global-padding
+    padding: 0 $global-padding;
+}
+
+.navbar-expand-lg .navbar-nav {
+    gap: 0 0.6rem;
 }

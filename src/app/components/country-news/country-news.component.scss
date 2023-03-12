@@ -20,12 +20,27 @@
         .banner-heading {
             color: white;
 
-            h1{
+            h1 {
                 margin-left: 4%;
                 margin-bottom: 5%;
+
+                display: inline-block;
+                background: #ebe3017e !important;
+                color: black;
             }
         }
     }
 
+
+}
+
+@media (max-width: 800px) {
+
+    .article-banner {
+        height: 30vh !important;
+        width: 100%;
+
+        // background-size: contain !important;
+    }
 
 }

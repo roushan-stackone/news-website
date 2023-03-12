@@ -1,7 +1,7 @@
-<div class="page-container">
+<div class="page-container p-0">
 
     <!-- preview section -->
-    <section class="w-100">
+    <section class="w-100 p-0">
 
         <div class="d-flex row preview-container">
 
@@ -38,7 +38,7 @@
             <ng-container *ngFor="let article of articles">
 
                 <div (click)="router.navigateByUrl('country/' + article.country)"
-                    class="d-flex flex-column col-sm-6 col-md-5 col-lg-4 col-xl-2 article-card-content"
+                    class="d-flex flex-column col-sm-6 col-md-5 col-lg-4 col-xl-3 article-card-content"
                     [ngStyle]="{'background-image': 'url(././././assets/article-images/' + article.image + '.png)'}">
 
                     <h4>{{ article.title }}</h4>
@@ -113,7 +113,8 @@
                     from. A digital news library is an online resource that organises and connects all the world's news
                     by
                     utilising
-                    the power of the Internet. There is a primary objective of newsforyou.com, which is to help provide
+                    the power of the Internet.
+                    There is a primary objective of newsforyou.com, which is to help provide
                     a
                     platform
                     on the Internet where authentic news can be found, and to make it the easiest place to find a
@@ -121,12 +122,8 @@
                     news
                     around the world. Founded by Lara Alghamdi and Mubasheer, the site is managed by Lara Alghamdi and
                     Mubasheer.
-                </p>
-
-            </div>
-
-            <div class="about-content">
-                <p>
+                    <br>
+                    <br>
                     The website features an easy to use navigation system and a user-friendly design, making it a
                     pleasure
                     to use.
@@ -139,7 +136,10 @@
                     continue to integrate new features as our business grows in the future as well. At the moment, you
                     can
                     enjoy the
-                    latest news from Australia, Turkey, India, and the United States; we look forward to adding more
+                    latest news from Australia, Turkey, India, and the United States;
+                    <br>
+                    <br>
+                    We look forward to adding more
                     countries and
                     features in the future.
                 </p>

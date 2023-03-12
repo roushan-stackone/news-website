@@ -33,6 +33,11 @@ $newsForYou-theme: mat.define-light-theme((color: (primary: $newsForYou-primary,
 
 /* You can add global styles to this file, and also import other style files */
 
+
+* {
+  font-family: 'Roboto Slab', serif !important;
+}
+
 html,
 body {
   height: 100%;
@@ -40,7 +45,11 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  // font-family: Roboto, "Helvetica Neue", sans-serif;
+
+
+
+
   background: black;
   color: white;
 
@@ -74,8 +83,10 @@ button.btn {
 
   box-shadow: $light-shadow;
 
+  transition: all 0.5s ease;
+
   &:hover {
-    box-shadow: $dark-shadow;
+    box-shadow: $button-shadow;
   }
 
 }
@@ -85,8 +96,31 @@ button.btn-primary {
   background-color: $primary-color;
 
   &:hover {
+    box-shadow: $dark-shadow;
     background-color: $secondary-color;
     color: black;
+    border-color: $primary-color;
   }
 
+}
+
+button.btn-secondary {
+
+  background-color: $secondary-color;
+
+  &:hover {
+    box-shadow: $dark-shadow;
+    background-color: $primary-color;
+    color: black;
+    border-color: $secondary-color;
+  }
+
+}
+
+.black {
+  color: black;
+}
+
+.secondary-text {
+  color: $secondary-color !important;
 }

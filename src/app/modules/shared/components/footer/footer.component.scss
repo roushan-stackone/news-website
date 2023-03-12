@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
 * {
-    font-family: Roboto;
+    color: black;
 }
 
 .footer-distributed {
@@ -11,7 +11,7 @@
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
-    font: bold 16px sans-serif;
+    font: 16px sans-serif;
     text-align: left;
     padding: 50px $global-padding 40px;
     overflow: hidden;
@@ -50,7 +50,7 @@ section {
 /* Footer links */
 
 .footer-distributed .footer-links {
-    color: #ffffff;
+    color: #363636;
     margin: 0 0 10px;
     padding: 0;
 }
@@ -60,6 +60,13 @@ section {
     line-height: 1.8;
     text-decoration: none;
     color: inherit;
+    font-weight: bold;
+    color: $secondary-color;
+
+    &:hover {
+        color: black;
+
+    }
 }
 
 .footer-distributed .footer-company-name {
@@ -73,6 +80,9 @@ section {
 
 .footer-distributed .footer-icons {
     margin-top: 40px;
+
+    display: flex;
+    gap: 0 8px;
 }
 
 .footer-distributed .footer-icons a {
@@ -80,7 +90,7 @@ section {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color: #33383b;
+    // background-color: #33383b;
     border-radius: 2px;
 
     font-size: 20px;
@@ -102,7 +112,6 @@ section {
     display: inline-block;
     vertical-align: top;
     margin: 15px 42px 0 0;
-    color: #ffffff;
 }
 
 /* The contact form */
@@ -155,12 +164,7 @@ section {
 }
 
 .footer-distributed form button {
-    border-radius: 3px;
-    background-color: #33383b;
-    color: #ffffff;
-    border: 0;
-    padding: 15px 50px;
-    font-weight: bold;
+    padding: 8px 30px;
     float: right;
 }
 
